@@ -1,0 +1,4 @@
+dukc-eureka-server:
+    build: DUKC-Eureka-Server/
+    ports:
+    - "8761:8761"
