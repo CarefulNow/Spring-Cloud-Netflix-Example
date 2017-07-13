@@ -2,3 +2,7 @@ dukc-eureka-server:
     build: DUKC-Eureka-Server/
     ports:
     - "8761:8761"
+dukc-hystrix-dashboard:
+    build: DUKC-Hystrix-Dashboard/
+    ports:
+    - "9100:9100"

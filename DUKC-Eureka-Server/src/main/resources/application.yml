@@ -3,6 +3,8 @@ server:
 eureka:
   client:
     register-with-eureka: false
-    fetch-registry: false
+    fetch-registry: true
+    healthcheck:
+      enabled: true
   server:
     wait-time-in-ms-when-sync-empty: 0

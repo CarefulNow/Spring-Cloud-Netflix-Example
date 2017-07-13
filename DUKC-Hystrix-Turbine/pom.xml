@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bazinga</groupId>
-    <artifactId>dukc-eureka-server</artifactId>
+    <artifactId>dukc-hystrix-turbine</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
     <parent>
@@ -19,13 +19,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <spring.cloud.version>Dalston.SR1</spring.cloud.version>
-        <main.class>com.bazinga.dukc.eureka.server.EurekaServer</main.class>
+        <main.class>com.bazinga.dukc.hystrix.turbine.HystrixTurbineApplication</main.class>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-turbine</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <artifactId>spring-cloud-starter-sleuth-zipkin</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -84,5 +84,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
